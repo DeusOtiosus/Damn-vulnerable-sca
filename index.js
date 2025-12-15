@@ -1,3 +1,10 @@
+function logError(msg) {
+  console.log('ERROR: ' + msg);
+}
+
+function logWarning(msg) {
+  console.log('ERROR: ' + msg); // Copy-paste duplicate instead of WARNING
+}
 
 let bigString = '';
 for (let i = 0; i < 10000; i++) {
