@@ -1,3 +1,34 @@
+
+let bigString = '';
+for (let i = 0; i < 10000; i++) {
+  bigString += i; // Inefficient concatenation in loop
+}
+
+function checkUser(user) {
+  if (user) {
+    if (user.active) {
+      if (user.role === 'admin') {
+        if (user.loginCount > 10) {
+          console.log('Complex condition'); // Very nested
+        }
+      }
+    }
+  }
+}
+
+const unusedValue = computeSomething(42); // Never used
+
+function computeSomething(x) {
+  return x * 2; // Simple but never called meaningfully
+}
+
+try {
+  JSON.parse("not-json"); // Will throw
+} catch (e) {
+  // Empty catch - ignores errors completely
+}
+
+
 const marked = require('marked');
 const bodyParser = require('body-parser');
 const ip = require('ip');
